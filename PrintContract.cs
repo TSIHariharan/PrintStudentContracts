@@ -435,7 +435,7 @@ namespace PrintStudentContracts
         public static string PrintURL(string ContractID, string Province)
         {
             string reportsURL = System.Configuration.ConfigurationManager.AppSettings["ReportsURL"];
-            string baseUrl = $"{reportsURL}/DocXTest/Default.aspx";
+            string baseUrl = $"{reportsURL}/Default.aspx";
 
             // Construct the dynamic URL with parameters
             string dynamicUrl = $"{baseUrl}?ContractID={Uri.EscapeDataString(ContractID)}&Province={Uri.EscapeDataString(Province)}";
